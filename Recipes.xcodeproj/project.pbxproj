@@ -26,6 +26,13 @@
 		774C3B3F18FE7DAF00A92146 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 774C3B3D18FE7DAF00A92146 /* InfoPlist.strings */; };
 		774C3B4118FE7DAF00A92146 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 774C3B4018FE7DAF00A92146 /* ExampleSpec.mm */; };
 		774C3B4418FE7DAF00A92146 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774C3B4318FE7DAF00A92146 /* Cedar-iOS.framework */; };
+		7759582C18FE87A700E5ABED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774C3B0418FE7D9F00A92146 /* UIKit.framework */; };
+		7759582D18FE87A700E5ABED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774C3B0018FE7D9F00A92146 /* Foundation.framework */; };
+		7759582E18FE87A700E5ABED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774C3B0218FE7D9F00A92146 /* CoreGraphics.framework */; };
+		7759583418FE87A700E5ABED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7759583218FE87A700E5ABED /* InfoPlist.strings */; };
+		7759583618FE87A700E5ABED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7759583518FE87A700E5ABED /* main.m */; };
+		7759583A18FE87A800E5ABED /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7759583918FE87A800E5ABED /* Cedar-iOS.framework */; };
+		7759583C18FE87A800E5ABED /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7759583B18FE87A800E5ABED /* ExampleSpec.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +70,14 @@
 		774C3B4218FE7DAF00A92146 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		774C3B4318FE7DAF00A92146 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
 		774C3B4518FE7DAF00A92146 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		7759582B18FE87A700E5ABED /* SpecsSuite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpecsSuite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7759583118FE87A700E5ABED /* SpecsSuite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpecsSuite-Info.plist"; sourceTree = "<group>"; };
+		7759583318FE87A700E5ABED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7759583518FE87A700E5ABED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7759583718FE87A700E5ABED /* SpecsSuite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpecsSuite-Prefix.pch"; sourceTree = "<group>"; };
+		7759583818FE87A700E5ABED /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		7759583918FE87A800E5ABED /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		7759583B18FE87A800E5ABED /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +113,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7759582818FE87A700E5ABED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7759582E18FE87A700E5ABED /* CoreGraphics.framework in Frameworks */,
+				7759582C18FE87A700E5ABED /* UIKit.framework in Frameworks */,
+				7759583A18FE87A800E5ABED /* Cedar-iOS.framework in Frameworks */,
+				7759582D18FE87A700E5ABED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -107,6 +133,7 @@
 				774C3B0618FE7D9F00A92146 /* Recipes */,
 				774C3B1F18FE7D9F00A92146 /* RecipesTests */,
 				774C3B3A18FE7DAF00A92146 /* Specs */,
+				7759582F18FE87A700E5ABED /* SpecsSuite */,
 				774C3AFF18FE7D9F00A92146 /* Frameworks */,
 				774C3AFE18FE7D9F00A92146 /* Products */,
 			);
@@ -118,6 +145,7 @@
 				774C3AFD18FE7D9F00A92146 /* Recipes.app */,
 				774C3B1818FE7D9F00A92146 /* RecipesTests.xctest */,
 				774C3B3418FE7DAF00A92146 /* Specs.octest */,
+				7759582B18FE87A700E5ABED /* SpecsSuite.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +223,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7759582F18FE87A700E5ABED /* SpecsSuite */ = {
+			isa = PBXGroup;
+			children = (
+				7759583818FE87A700E5ABED /* Rakefile */,
+				7759583918FE87A800E5ABED /* Cedar-iOS.framework */,
+				7759583B18FE87A800E5ABED /* ExampleSpec.mm */,
+				7759583018FE87A700E5ABED /* Supporting Files */,
+			);
+			path = SpecsSuite;
+			sourceTree = "<group>";
+		};
+		7759583018FE87A700E5ABED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7759583118FE87A700E5ABED /* SpecsSuite-Info.plist */,
+				7759583218FE87A700E5ABED /* InfoPlist.strings */,
+				7759583518FE87A700E5ABED /* main.m */,
+				7759583718FE87A700E5ABED /* SpecsSuite-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,6 +301,23 @@
 			productReference = 774C3B3418FE7DAF00A92146 /* Specs.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		7759582A18FE87A700E5ABED /* SpecsSuite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7759583F18FE87A800E5ABED /* Build configuration list for PBXNativeTarget "SpecsSuite" */;
+			buildPhases = (
+				7759582718FE87A700E5ABED /* Sources */,
+				7759582818FE87A700E5ABED /* Frameworks */,
+				7759582918FE87A700E5ABED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpecsSuite;
+			productName = SpecsSuite;
+			productReference = 7759582B18FE87A700E5ABED /* SpecsSuite.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -281,6 +348,7 @@
 				774C3AFC18FE7D9F00A92146 /* Recipes */,
 				774C3B1718FE7D9F00A92146 /* RecipesTests */,
 				774C3B3318FE7DAF00A92146 /* Specs */,
+				7759582A18FE87A700E5ABED /* SpecsSuite */,
 			);
 		};
 /* End PBXProject section */
@@ -308,6 +376,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				774C3B3F18FE7DAF00A92146 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7759582918FE87A700E5ABED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7759583418FE87A700E5ABED /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +431,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7759582718FE87A700E5ABED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7759583618FE87A700E5ABED /* main.m in Sources */,
+				7759583C18FE87A800E5ABED /* ExampleSpec.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -386,6 +471,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				774C3B3E18FE7DAF00A92146 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7759583218FE87A700E5ABED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7759583318FE87A700E5ABED /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -583,6 +676,55 @@
 			};
 			name = Release;
 		};
+		7759583D18FE87A800E5ABED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpecsSuite/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpecsSuite/SpecsSuite-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpecsSuite/SpecsSuite-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7759583E18FE87A800E5ABED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpecsSuite/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpecsSuite/SpecsSuite-Prefix.pch";
+				INFOPLIST_FILE = "SpecsSuite/SpecsSuite-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -602,6 +744,7 @@
 				774C3B2B18FE7D9F00A92146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		774C3B2C18FE7D9F00A92146 /* Build configuration list for PBXNativeTarget "RecipesTests" */ = {
 			isa = XCConfigurationList;
@@ -610,12 +753,22 @@
 				774C3B2E18FE7D9F00A92146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		774C3B4618FE7DAF00A92146 /* Build configuration list for PBXNativeTarget "Specs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				774C3B4718FE7DAF00A92146 /* Debug */,
 				774C3B4818FE7DAF00A92146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7759583F18FE87A800E5ABED /* Build configuration list for PBXNativeTarget "SpecsSuite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7759583D18FE87A800E5ABED /* Debug */,
+				7759583E18FE87A800E5ABED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
